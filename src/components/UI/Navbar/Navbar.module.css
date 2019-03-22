@@ -25,7 +25,7 @@ a {
     font-weight: bold;
 }
 
-.Login_button {
+.AddQuestion_button {
     margin: auto 1.5rem;
     background-color: #4b92f2;
     color: white;
@@ -35,8 +35,9 @@ a {
     float: right;
 }
 
-.Login_button:hover {
-    background-color: #e68a00;
+.AddQuestion_button:hover {
+    background-color: #287ff0;
+    
 }
 
 .Logo:hover {

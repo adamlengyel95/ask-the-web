@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from './Navbar.module.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) => {
     return(
         <div className={classes.Navbar}>
             <div className={classes.Logo}>
-                <a href="#home">Ask The Web!</a>
+                <Link to="/">Ask The Web!</Link>
             </div>
             
-            <a className={classes.Login_button} href="#news">+ Kérdés hozzáadása</a>
+            <Link to="/addQuestion" className={classes.AddQuestion_button} >+ Kérdés hozzáadása</Link>
            
             
         </div>

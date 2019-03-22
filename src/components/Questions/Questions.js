@@ -8,7 +8,7 @@ const Questions = (props) => {
         <div>
             {
                 props.questions.map(q => {
-                    return <Question title={q.title} answers={q.answers}/>
+                    return <Question key={q.id} id={q.id} title={q.title} answers={q.answers} onClickHandler={props.onClickHandler}/>
                 })
             }
         </div>

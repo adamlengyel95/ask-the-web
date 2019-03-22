@@ -1,13 +1,15 @@
 import React from 'react';
 import classes from './Question.module.css';
+import { Link } from 'react-router-dom';
 
 const Question = (props) => {
     const answerCount = props.answers.length;
+    
     return(
-        <div className={classes.QuestionContainer}>
+        <Link to={'/question/' + props.id} className={classes.QuestionContainer}>
             <h2>{props.title}</h2>
-            <p>{ answerCount } válasz</p>
-        </div>
+            <p className={classes.AnswerCount}>{ answerCount } válasz</p>
+        </Link>
     );
 };
 

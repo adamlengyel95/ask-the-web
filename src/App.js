@@ -3,6 +3,7 @@ import './App.css';
 import './components/Layout/Layout';
 import Layout from './components/Layout/Layout';
 
+
 class App extends Component {
   state = {
     questions: [
@@ -11,12 +12,9 @@ class App extends Component {
         title: 'Hogyan tudom Windows 10-n elindítani a parancssort?',
         answers: [
           {
+            id: 1,
             questionId: 1,
             content: 'Start menü, ezután begépeled, hogy cmd és Enter.'
-          },
-          {
-            questionId: 1,
-            content: 'Meg is keresheted a fájl helyét és onnan készítesz egy parancsikont.'
           }
         ]
       },
@@ -26,10 +24,12 @@ class App extends Component {
         title: 'Hogyan tudok java programot futtatni?',
         answers: [
           {
+            id: 2,
             questionId: 2,
             content: 'javac myApp.java paranccsal először lefordítod, majd java myApp parancssal futtatod',
           },
           {
+            id: 3,
             questionId: 2,
             content: 'Feltelepítesz valamilyen fejlesztői környezetet pl Eclipse, IntellIJ, ezekből gombnyomással futtathatod.'
           },
@@ -42,10 +42,12 @@ class App extends Component {
         title: 'Hogyan tudom telepíteni a VLC Media Playert Ubuntu-n?',
         answers: [
           {
+            id: 4,
             questionId: 3,
             content: 'Megnyitod a terminált(Ctrl+T) majd  futtatod a következő parancsot: % sudo snap install vlc',
           },
           {
+            id: 5,
             questionId: 3,
             content: 'Az Ubuntu Software alkalmazásban is megtalálod.'
           }
@@ -56,14 +58,17 @@ class App extends Component {
         title: 'PC-t vagy konzolt érdemes venni 2019-ben?',
         answers: [
           {
+            id: 6,
             questionId: 4,
             content: 'A konzol sokkal jobban megéri ha az ár érték arányt nézzük.',
           },
           {
+            id: 7,
             questionId: 4,
             content: 'PC-t, mivel azt másra is tudod használni.'
           },
           {
+            id: 8,
             questionId: 4,
             content: 'Mindkettő jó választás.'
           }
@@ -73,9 +78,9 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
-        <Layout questions={this.state.questions} />
-      </div>
+        <div className="App">
+          <Layout questions={this.state.questions} />
+        </div>
     );
   }
 }
