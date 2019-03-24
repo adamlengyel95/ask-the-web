@@ -76,10 +76,27 @@ class App extends Component {
       }
     ]
   }
+
+  sendQuestionHandler = (newQuestionTitle) => {
+    const questionCount = this.state.questions.length;
+    const currentLastId = this.state.questions[questionCount-1].id;
+    console.log('last:'+currentLastId);
+    console.log(newQuestionTitle);
+    const newQuestion = {
+      id: currentLastId + 1,
+        title: newQuestionTitle,
+        answers: []
+    }
+    const actualQuestions = this.state.questions;
+    actualQuestions.push(newQuestion);
+    this.setState({questions: actualQuestions});
+    console.log(this.state.questions);
+  }
+
   render() {
     return (
         <div className="App">
-          <Layout questions={this.state.questions} />
+          <Layout questions={this.state.questions} sendQuestionHandler={this.sendQuestionHandler.bind(this)}/>
         </div>
     );
   }

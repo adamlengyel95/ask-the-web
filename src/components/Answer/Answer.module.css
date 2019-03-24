@@ -1,0 +1,13 @@
+.AnswerContainer {
+    border: 1px solid black;
+    width: 60%;
+    margin:auto;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.AnswerButton {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}

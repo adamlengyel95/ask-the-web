@@ -9,7 +9,7 @@ export class Layout extends Component {
   
 
   render() {
-    
+    //console.log(this.props.sendQuestionHandler);
     return (
       <BrowserRouter>
         <div>
@@ -19,7 +19,10 @@ export class Layout extends Component {
             render = {(props) => <Questions {...props} questions={this.props.questions}/>}
           />
           
-          <Route path="/addQuestion" component={AddQuestion}/>
+          <Route 
+            path="/addQuestion" 
+            render = {(props) => <AddQuestion {...props} sendQuestionHandler={this.props.sendQuestionHandler} />}
+          />
           <Route
             path={"/question/:id"}
             render = {(props) => <QuestionPage {...props}  questions={this.props.questions}/>}
