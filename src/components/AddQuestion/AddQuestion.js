@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
+import classes from './AddQuestion.module.css';
 
 export class AddQuestion extends Component {
   state = {
@@ -15,13 +16,12 @@ export class AddQuestion extends Component {
   }
 
   render() {
-    console.log(this.props.sendQuestionHandler);
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-            <label>Mit szeretnél tudni?</label>
+        <form className={classes.SendQuestionForm} onSubmit={this.handleSubmit}>
+            <label>Mit szeretnél tudni? </label>
             <input type="text" onChange={this.handleChange.bind(this)}/><br></br>
-            <Link to="/" onClick={() => this.props.sendQuestionHandler(this.state.newQuestion)}>Küldés</Link>
+            <Link to="/" className={classes.SendButton} onClick={() => this.props.sendQuestionHandler(this.state.newQuestion)}>Küldés</Link>
             
         </form>
       </div>

@@ -1,0 +1,89 @@
+.EditQuestionTextBox {
+    resize: none;
+    width: 240px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #8c8c8c;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.QuestionFeatures {
+    display: flex;
+    justify-content: space-between;
+}
+
+.QuestionContainer {
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #e6e6e6;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.EditButton {
+    
+    background-color: #4b92f2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    float: left;
+    border: none;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-right: 10px;
+}
+
+.EditButton:hover {
+    background-color: #287ff0;
+}
+
+
+.DeleteButton {
+    background-color: #ff3333;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.DeleteButton:hover {
+    background-color: red;
+}
+
+.DeleteButtonContainer {
+    align-self: flex-end;
+}
+
+
+.CommentTextBox {
+    resize: none;
+    width: 320px;
+    height: 100px;
+    
+}
+
+.SendCommentButton {
+    background-color: #4b92f2;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.SendCommentButton:hover {
+    background-color: #287ff0;
+}

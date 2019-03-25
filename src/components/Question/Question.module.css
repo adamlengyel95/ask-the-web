@@ -6,9 +6,11 @@
     justify-content: center;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 10px;
     background-color: #ffffcc;
     display: block;
-    
+    color: #3d3f42;
+    border-radius: 4px;
 }
 
 h2 {
